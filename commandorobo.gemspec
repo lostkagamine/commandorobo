@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
 	s.authors = ['ry00001']
 	s.email = 'othery00001@gmail.com'
 	s.files = Dir['lib/**/*.*']
-	s.homepage = 'http://rubygems.org/gems/commandorobo'
+	s.homepage = 'https://github.com/ry00001/commandorobo'
 	s.license = 'MIT'
 	s.add_runtime_dependency 'discordrb', '~> 3.1', '>= 3.1.0'
 end
