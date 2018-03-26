@@ -1,5 +1,7 @@
 module Commandorobo
+    # Constants for commandorobo.
     module Constants
+        # An array of every valid Discordrb permission as a symbol.
         ValidPerms = [
             :create_instant_invite, 
             :kick_members,          

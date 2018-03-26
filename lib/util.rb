@@ -2,12 +2,19 @@
 # Written by ry00001
 
 module Commandorobo
+    # Utilities for commandorobo.
     module Utils
+        # Removes dashes. Used internally.
+        # @param [String] i String to remove dashes from.
+        # @return [String] String with no dashes.
         def self.nodash(i)
             i.split('').reject {|j| j == '-'}.join('')
         end
 
-        def self.consume_switch(str) # this function does not eat nintendo switches. do not try to feed it those.
+        # Gets switches from text.
+        # @param [String] str String to parse.
+        # @return [Hash] Switches as a hash.
+        def self.consume_switch(str)
             nextarg = nil
             parsed = false
             switches = {}
@@ -37,10 +44,9 @@ module Commandorobo
             return switches
         end
 
-        def self.fish_xdm_login_hack_hack_hack_hack # I don't know why this is here but it is, enjoy
-            'perry was here'
-        end
-
+        # Does the opposite of {Commandorobo::Utils::consume_switch}, it removes switches.
+        # @param [String] str String to parse.
+        # @return [Array] A raw array of removed switches.
         def self.remove_switch(str)
             parsed = []
             skip = false
