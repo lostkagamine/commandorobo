@@ -164,9 +164,10 @@ module Commandorobo
     # @attr_reader [Hash] config The configuration for the bot.
     # @attr_reader [Array] commands The commands, in an array. This isn't a hash because I have a method for looking them up.
     # @attr_reader [Array] listeners Bound event listeners.
+    # @attr_reader [Array] owners List of user IDs to consider as bot owners.
     class Bot < Discordrb::Bot
 	    attr_accessor :invokers
-        attr_reader :config, :commands, :listeners
+        attr_reader :config, :commands, :listeners, :owners
         def initialize(config, token, **kwargs)
                 @config = config
                 @commands = []
