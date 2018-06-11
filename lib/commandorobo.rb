@@ -23,7 +23,7 @@ module Commandorobo
         # @return [Array] An array of strings representing the pretty name for permissions.
         def prettify
             @perm.map do |t| # <hackiness>
-                t.to_s.split(/_/).map(&:capitalize)
+                t.to_s.split(/_/).map(&:capitalize).join(' ')
             end # </hackiness>
         end
     end
