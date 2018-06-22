@@ -168,7 +168,7 @@ module Commandorobo
     class Bot < Discordrb::Bot
 	    attr_accessor :invokers
         attr_reader :config, :commands, :listeners, :owners
-        def initialize(config, token, **kwargs)
+        def initialize(config, token, kwargs:{})
                 @config = config
                 @commands = []
                 @listeners = {}
