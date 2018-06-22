@@ -174,7 +174,7 @@ module Commandorobo
                 @listeners = {}
                 @invokers = config['invokers'].map {|i| Commandorobo::Invoker.new(i[1], i[0].to_sym)}
                 @owners = @config['owner'] || kwargs[:owners]
-                super(token: token, **kwargs)
+                super(token: token)
                 # begin command
                 self.message do |ev|
                     meme = self.get_invoker(ev.text)

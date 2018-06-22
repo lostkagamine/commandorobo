@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name = 'commandorobo'
-	s.version = '0.0.6.1'
+	s.version = '0.0.6.2'
 	s.date = '2018-03-25'
 	s.summary = 'Command framework for discordrb'
 	s.description = 'A command framework for discordrb.'
